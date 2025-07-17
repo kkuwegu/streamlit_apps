@@ -48,6 +48,10 @@ def create_tech_rep_diagram_graphviz(df_tech_data):
 # read csv file
 df_tech_data_all = pd.read_csv("data/tech_representation.csv")
 
+# Download data from Google Sheet
+sheet_url = "https://docs.google.com/spreadsheets/d/1_ZOiXZGA3DzyhO4cEZe0XlztVPwsVj1FnDgYM0hcsUk/"
+df_tech_data_all = pd.read_csv(sheet_url + 'export?format=csv')
+
 # fill NaN values with the previous value in the column
 df_tech_data_all.fillna(method='ffill', inplace=True)
 
@@ -55,14 +59,31 @@ df_tech_data_all.fillna(method='ffill', inplace=True)
 
 ## --- dashboard ---
 
+st.markdown('# Technology Representation Dashboard')
+st.markdown('This dashboard visualizes the technology representation data.')
+st.markdown('Author: Barton Chen / yi-chung.chen@empa.ch')
+st.markdown('Urban Energy Systems Lab')
+st.markdown('Empa (Swiss Federal Laboratories for Materials Science and Technology)')
+st.markdown('Last updated: July 2025')
+st.markdown('')
+
+
+# show link to source file
+st.markdown(f'Access to the source file ([Technology representation Google Sheet]({sheet_url}))')
+st.markdown('')
+
+# Add a textbox for keyword input
+keyword = st.text_input("Filter by keyword (optional)")
+
+# Filter dataframe by keyword if provided
+if keyword:
+    df_tech_data_all = df_tech_data_all[df_tech_data_all.apply(lambda row: keyword.lower() in row.astype(str).str.lower().to_string(), axis=1)]
+
 # show drop list  of technology
 technology_list = df_tech_data_all['Technology name'].unique()
 select_tech = st.selectbox("Select Technology", technology_list)
 
 # show diagram
-dot = create_tech_rep_diagram_graphviz(df_tech_data_all[df_tech_data_all['Technology name'] == select_tech])
-
-# Use a container with fixed width
-# col1, col2, col3 = st.columns([1, 8, 1])  # Creates 3 columns, middle one is wider
-# with col2:
-st.graphviz_chart(dot.source, use_container_width=False)
+if select_tech is not None:
+    dot = create_tech_rep_diagram_graphviz(df_tech_data_all[df_tech_data_all['Technology name'] == select_tech])
+    st.graphviz_chart(dot.source, use_container_width=False)
