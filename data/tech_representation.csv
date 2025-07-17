@@ -1,0 +1,6 @@
+Technology name,Description,Process name,Process input,Process output
+waste / biomass gasification to syngas,waste / biomass gasification to syngas,Fluidized bed reactor,"MSW/Wood, O2","H2*, CO*, CO2*"
+,,Gas separation unit,"H2*, CO*, CO2*","H2, CO, CO2"
+waste / biomass gasification to hydrogen,waste / biomass gasification to hydrogen,Fluidized bed reactor,"MSW/Wood, O2","H2*, CO*, CO2*"
+,,Gas separation unit,"H2*, CO*, CO2*, H2O","H2, CO2"
+water electrolysis,water electrolysis,water electrolysis,"Electricity, H2O","H2, O2"
