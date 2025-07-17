@@ -17,18 +17,6 @@ def create_tech_rep_diagram_graphviz(df_tech_data):
     # Set orthogonal edges (90-degree turns)
     dot.attr(splines='ortho')
     
-    # Improve edge positioning
-    dot.attr(concentrate='true')
-    # dot.attr(nodesep='1.0')  # Increased horizontal spacing between nodes
-    # dot.attr(ranksep='2.0')  # Increased spacing between ranks
-    
-    # Make diagram and font bigger
-    dot.attr(dpi='70')
-    # dot.attr(fontsize='30')
-    dot.attr(size='16,8!')  # Width=16 inches, Height=8 inches, ! forces exact size
-    # dot.attr('node', fontsize='14')
-    # dot.attr('edge', fontsize='12')
-
     # Store nodes to avoid duplicates
     carrier_nodes = set()
     process_nodes = set()
@@ -73,4 +61,8 @@ select_tech = st.selectbox("Select Technology", technology_list)
 
 # show diagram
 dot = create_tech_rep_diagram_graphviz(df_tech_data_all[df_tech_data_all['Technology name'] == select_tech])
-st.graphviz_chart(dot.source)
+
+# Use a container with fixed width
+# col1, col2, col3 = st.columns([1, 8, 1])  # Creates 3 columns, middle one is wider
+# with col2:
+st.graphviz_chart(dot.source, use_container_width=False)
