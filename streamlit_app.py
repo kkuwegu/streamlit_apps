@@ -8,7 +8,7 @@ from graphviz import Digraph
 
 def create_tech_rep_diagram_graphviz(df_tech_data):
     """Create a technology diagram for the given process name and tech data using graphviz."""
-    tech_name = df_tech_data['Technology name'].iat[0]
+    tech_name = df_tech_data['ehubX Tech ID'].iat[0]
     dot = Digraph(name=tech_name)
     
     # Set horizontal layout (Left to Right)
@@ -22,14 +22,14 @@ def create_tech_rep_diagram_graphviz(df_tech_data):
     process_nodes = set()
 
     for indx in df_tech_data.index:
-        name_proc = df_tech_data['Process name'][indx]
+        name_proc = df_tech_data['Unit Operation'][indx]
         # Add process node
         if name_proc not in process_nodes:
             dot.node(name_proc, shape='box', style='filled', fillcolor='lightblue')
             process_nodes.add(name_proc)
 
         # Add carrier nodes and edges
-        for col, direction in [('Process input', 'in'), ('Process output', 'out')]:
+        for col, direction in [('Input Carriers', 'in'), ('Output Carriers', 'out')]:
             li_inout = [x.strip() for x in df_tech_data.at[indx, col].split(',')]
             for carr in li_inout:
                 if carr not in carrier_nodes:
@@ -49,8 +49,9 @@ def create_tech_rep_diagram_graphviz(df_tech_data):
 df_tech_data_all = pd.read_csv("data/tech_representation.csv")
 
 # Download data from Google Sheet
-sheet_url = "https://docs.google.com/spreadsheets/d/1_ZOiXZGA3DzyhO4cEZe0XlztVPwsVj1FnDgYM0hcsUk/"
-df_tech_data_all = pd.read_csv(sheet_url + 'export?format=csv')
+#sheet_url = "https://docs.google.com/spreadsheets/d/1_ZOiXZGA3DzyhO4cEZe0XlztVPwsVj1FnDgYM0hcsUk/"
+
+df_tech_data_all = pd.read_excel("data/tech_conv_with_units.xlsx", engine='openpyxl')
 
 # fill NaN values with the previous value in the column
 df_tech_data_all.fillna(method='ffill', inplace=True)
@@ -69,7 +70,7 @@ st.markdown('')
 
 
 # show link to source file
-st.markdown(f'Access to the source file ([Technology representation Google Sheet]({sheet_url}))')
+#st.markdown(f'Access to the source file ([Technology representation Google Sheet]({sheet_url}))')
 st.markdown('')
 
 # Add a textbox for keyword input
@@ -80,10 +81,11 @@ if keyword:
     df_tech_data_all = df_tech_data_all[df_tech_data_all.apply(lambda row: keyword.lower() in row.astype(str).str.lower().to_string(), axis=1)]
 
 # show drop list  of technology
-technology_list = df_tech_data_all['Technology name'].unique()
+technology_list = df_tech_data_all['ehubX Tech ID'].unique()
 select_tech = st.selectbox("Select Technology", technology_list)
 
 # show diagram
 if select_tech is not None:
-    dot = create_tech_rep_diagram_graphviz(df_tech_data_all[df_tech_data_all['Technology name'] == select_tech])
+    st.markdown(df_tech_data_all[df_tech_data_all["ehubX Tech ID"] == select_tech]["Description"].iat[0])
+    dot = create_tech_rep_diagram_graphviz(df_tech_data_all[df_tech_data_all['ehubX Tech ID'] == select_tech])
     st.graphviz_chart(dot.source, use_container_width=False)
