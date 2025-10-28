@@ -1,226 +1,251 @@
-ehubX Tech ID,Description,Process Type,Input Carriers,Main Input Carrier,Output Carriers,Main Output Carrier
-T_C_Dummy_Elec_ElDrs_El13,,Dummy,ElDsr,na,El13,na
-T_C_Dummy_Elec_El13_ElExp,,Dummy,El13,na,ElExp,na
-T_C_Dummy_Thermal_ThBdg_ThSh,,Dummy,ThBdg,na,ThSh,na
-T_C_Dummy_Thermal_ThBdg_ThDhw,,Dummy,ThBdg,na,ThDhw,na
-T_C_Dummy_Thermal_ThDh_ThHt,,Dummy,ThDh,na,ThHt,na
-T_C_Dummy_Wood_WoodCh_Wood,,Dummy,WoodCh,na,Wood,na
-T_C_Dummy_Wood_WoodEu_Wood,,Dummy,WoodEu,na,Wood,na
-T_C_Dummy_Ch4_Ch4BioCh_Ch4,,Dummy,Ch4BioCh,na,Ch4,na
-T_C_Dummy_Ch4_Ch4SynEu_Ch4,,Dummy,Ch4SynEu,na,Ch4,na
-T_C_Dummy_Hydrogen_H2GreenEu_H2,,Dummy,H2GreenEu,na,H2,na
-T_C_Dummy_Hydrogen_H2BlueEu_H2,,Dummy,H2BlueEu,na,H2,na
-T_C_Dummy_Hydrocarbons_C12Syn_C12,,Dummy,C12Syn,na,C12,na
-T_C_Dummy_Hydrogen_H2_H2Process,,Dummy,H2,na,H2Process,na
-T_C_Dummy_Hydrogen_H2Process_Vent,,Dummy,H2Process,na,H2,na
-T_C_Dummy_Hydrocarbons_C12_C12Av,,Dummy,C12,na,C12Av,na
-T_C_Net_Elec_El13_El47,Not in Tech description,Eletricity Transport,El13,na,El47,na
-T_C_NetCoupled_Net_Elec_El47_El13,Coupled electricity network between El47 and El13.,Eletricity Transport,El47,na,El13,na
-T_C_Net_Elec_El47_ElBdg,Electricity network connection between El47 and buildings.,Eletricity Transport,El47,na,ElBdg,na
-T_C_NetCoupled_Elec_ElBdg_El47,Coupled electricity network between buildings and El47.,Eletricity Transport,ElBdg,na,El47,na
-T_C_Net_Elec_El47_ElRest,Electricity network connection between El47 and other electricity nodes.,Eletricity Transport,El47,na,ElRest,na
-T_C_NetCoupled_Elec_ElRest_El47,Coupled electricity network between other electricity nodes and El47.,Eletricity Transport,ElRest,na,El47,na
-T_C_Conv_Elec_Nuclear_U235_El13,Electricity generation from nuclear power (U235) at node El13.,Thermal Powerplant,U235,na,"El13, ThDh",El13
-T_C_Conv_Elec_Msw_Incinerator,Electricity generation from municipal solid waste (MSW) incineration.,Thermal Powerplant,Msw,na,"El13, ThHt, CO2Waste",El13
-T_C_Conv_Elec_H2_Ccgt_2040,Hydrogen-fueled combined cycle gas turbine (CCGT) electricity generation (2040).,Thermal Powerplant,H2,na,El47,na
-T_C_Conv_Elec_H2_Ocgt_2040,Hydrogen-fueled open cycle gas turbine (OCGT) electricity generation (2040).,Thermal Powerplant,H2,na,El13,na
-T_C_Conv_Elec_Ch4_Chp,Combined heat and power (CHP) generation using methane (CH₄).,Heat and Electricity generation,Ch4,na,"El47, ThHt",El47
-T_C_Conv_Elec_Ch4_Ocgt_2030,Methane-fueled open cycle gas turbine (OCGT) electricity generation (2030).,Gas Turbine,Ch4,na,El13,na
-T_C_Conv_Elec_Ch4_Ccgt_2050,Methane-fueled CCGT with carbon capture and storage (CCS) (2050).,Gas Turbine,Ch4,na,El13,na
-T_C_Conv_Elec_Ch4_CCGT + CCS Combo,Methane-fueled CCGT with carbon capture and storage (CCS).,Gas Turbine,Ch4,na,"El13, CO2Sys",El13
-T_C_Conv_Elec_Wood_Chp,Combined heat and power (CHP) generation using wood.,Heat and Electricity generation,Wood,na,"El47, ThHt, CO2Wood",El47
-T_C_Conv_Elec_Geothermal_Chp_2040,Geothermal-based CHP generation (2040).,Heat and Electricity generation,ThGround,na,"El47, ThHt",El47
-T_C_Conv_Elec_Fuelcell_El47_2040,Electricity generation via fuel cells at node El47 (2040).,Electricity production / Hydrogen use,H2,na,"El47, ThHt",El47
-T_C_Conv_Elec_Fuelcell_El47_2050,Electricity generation via fuel cells at node El47 (2050).,Electricity production / Hydrogen use,H2,na,"El47, ThHt",El47
-T_C_Conv_Elec_FuelcellCh4_El47_2030,Methane-fueled fuel cell electricity generation at El47 (2030).,Electricity production / Hydrogen use,Ch4,na,"El47, ThHt",El47
-T_C_Conv_Hydro_HydroRor_Plant,Run-of-river hydroelectric power plant.,Hydro,HydroRor,na,El13,na
-T_C_Conv_Hydro_HydroS_Turbine,Hydroelectric power generation from storage reservoirs.,Hydro,HydroS,na,El13,na
-T_C_Conv_Hydro_HydroSMustrun_Turbine,Must-run hydroelectric power generation from storage reservoirs.,Water turbine,HydroSMustrun,na,El13,na
-T_C_Conv_Hydro_HydroPumped_Turbine,Pumped hydroelectric power generation (turbine mode).,Water turbine,HydroPumped,na,El13,na
-T_C_Conv_Hydro_HydroPumped_Pump,Pumped hydroelectric energy storage (pump mode).,Water turbine,El13,na,HydroPumped,HydroPumped
-T_C_Conv_Elec_Fuelcell_ElBdg_2030,Electricity generation via fuel cells in buildings (2030).,Electricity production / Hydrogen use,H2,na,"ElBdg, ThBdg",ElBdg
-T_C_Conv_Elec_Fuelcell_ElBdg_2050,Electricity generation via fuel cells in buildings (2050).,Electricity production / Hydrogen use,H2,na,"ElBdg, ThBdg",ElBdg
-T_C_Conv_Elec_FuelcellCh4_ElBdg_2030,Methane-fueled fuel cell electricity generation in buildings (2030).,Electricity production / Hydrogen use,Ch4,na,"ElBdg, ThBdg",ElBdg
-T_C_Conv_Thermal_ThermalBdg_Hp,"Generic heat pump for residential heating, fixed COP 4",Heat generation,ElBdg,na,ThBdg,na
-T_C_Coupled_Thermal_ThermalBdg_HpSc,Coupled heat pump system for buildings.,Heat generation,ElBdg,na,ThSc,na
-T_C_Conv_Thermal_ThermalBdg_ElBdg_ThSc,Electric heating system for buildings with thermal storage.,Heat generation,ElBdg,na,ThSc,na
-T_C_Conv_Thermal_ThermalBdg_El,Electric heating system for buildings.,Heat generation,ElBdg,na,ThBdg,na
-T_C_Conv_Thermal_ThermalBdg_Wood,Wood-fueled heating system for buildings.,Heat generation,Wood,na,ThBdg,na
-T_C_Conv_Thermal_ThermalBdg_Ch4,Methane-fueled heating system for buildings.,Gas Boiler,Ch4,na,ThBdg,na
-T_C_Conv_Thermal_ThermalBdg_C12,Hydrocarbon-fueled heating system for buildings.,Heat generation,C12,na,ThBdg,na
-T_C_Conv_Thermal_MswPh_ThPh_Waste,Waste-fueled thermal energy generation in power plants.,Heat generation,MswPh,na,ThPh,na
-T_C_Conv_Thermal_ThAmb_ThHt_2030,Ambient heat extraction for heating (2030).,Heat generation,"ElRest, ThAmb",ElRest,ThHt,na
-T_C_Conv_Thermal_ThAmb_ThHt_2040,Ambient heat extraction for heating (2040).,Heat generation,"ElRest, ThAmb",ElRest,ThHt,na
-T_C_Conv_Thermal_ThLt_ThHt_2030,Low-temperature heat upgrade for district heating (2030).,,"ElRest, ThLt",ElRest,ThHt,na
-T_C_Conv_Thermal_ThLt_ThHt_2040,Low-temperature heat upgrade for district heating (2040).,,"ElRest, ThLt",ElRest,ThHt,na
-T_C_Conv_Thermal_ThermalPh_El,Electric heating system for thermal power plants.,Heat generation,ElRest,na,ThPh,na
-T_C_Conv_Thermal_ThermalPh_Wood,Wood-fueled heating system for thermal power plants.,Heat generation,Wood,na,ThPh,na
-T_C_Conv_Thermal_ThermalPh_Ch4,Methane-fueled heating system for thermal power plants.,Heat generation,Ch4,na,ThPh,na
-T_C_Conv_Thermal_ThermalPh_C12,Hydrocarbon-fueled heating system for thermal power plants.,Heat generation,C12,na,ThPh,na
-T_C_Conv_Thermal_ThermalPh_H2_2030,Hydrogen-fueled heating system for thermal power plants (2030).,Heat generation,H2,na,ThPh,na
-T_C_Net_Thermal_ThDh_ThBdg,Thermal network connection between district heating and buildings.,Heat transfer,ThDh,na,ThBdg,na
-T_C_Net_Thermal_ThHt_ThDh,Thermal network connection between heat sources and district heating.,Heat transfer,ThHt,na,ThDh,na
-T_C_Conv_ThBdg_Vent,Ventilation heat loss in buildings.,,ThBdg,na,ThLt,na
-T_C_Conv_ThLt_Vent,Ventilation heat loss at low-temperature heat nodes.,,ThLt,na,ThHt,na
-T_C_Conv_ThHt_Vent,Ventilation heat loss at high-temperature heat nodes.,,ThHt,na,ThPh,na
-T_C_Conv_ThPh_Vent,Ventilation heat loss at thermal power plants.,,ThPh,na,ThHt,na
-T_C_Conv_Hydrogen_Electrolysis_El47_H2_2030,"Electrolysis 2030, Alkaline technology is the benchmark ",Hydrogen production / Electricity use,El47,na,H2,na
-T_C_Conv_Hydrogen_Electrolysis_El47_H2_2040,"Electrolysis 2040, Alkaline technology is the benchmark",Hydrogen production / Electricity use,El47,na,H2,na
-T_C_Conv_Hydrogen_Electrolysis_El47_H2_2050,"Electrolysis 2050, Solid oxide electrolysis is the benchmark",Hydrogen production / Electricity use,El47,na,H2,na
+ehubX Tech ID,Description,Process Type,Input Carriers,Main Input Carrier,Output Carriers,Main Output Carrier,Input Units - Shares,Output Units - Shares,Unit Operation
+T_C_Dummy_Elec_ElDrs_El13,,Dummy,ElDsr,na,El13,na,kWh,kWh,
+T_C_Dummy_Elec_El13_ElExp,,Dummy,El13,na,ElExp,na,kWh,kWh,
+T_C_Dummy_Thermal_ThBdg_ThSh,,Dummy,ThBdg,na,ThSh,na,kWh,kWh,
+T_C_Dummy_Thermal_ThBdg_ThDhw,,Dummy,ThBdg,na,ThDhw,na,kWh,kWh,
+T_C_Dummy_Thermal_ThDh_ThHt,,Dummy,ThDh,na,ThHt,na,kWh,kWh,
+T_C_Dummy_Wood_WoodCh_Wood,,Dummy,WoodCh,na,Wood,na,kWh,kWh,
+T_C_Dummy_Wood_WoodEu_Wood,,Dummy,WoodEu,na,Wood,na,kWh,kWh,
+T_C_Dummy_Ch4_Ch4BioCh_Ch4,,Dummy,Ch4BioCh,na,Ch4,na,kWh,kWh,
+T_C_Dummy_Ch4_Ch4SynEu_Ch4,,Dummy,Ch4SynEu,na,Ch4,na,kWh,kWh,
+T_C_Dummy_Hydrogen_H2GreenEu_H2,,Dummy,H2GreenEu,na,H2,na,kWh,kWh,
+T_C_Dummy_Hydrogen_H2BlueEu_H2,,Dummy,H2BlueEu,na,H2,na,kWh,kWh,
+T_C_Dummy_Hydrocarbons_C12Syn_C12,,Dummy,C12Syn,na,C12,na,kg,kWh,
+T_C_Dummy_Hydrogen_H2_H2Process,,Dummy,H2,na,H2Process,na,kWh,kWh,
+T_C_Dummy_Hydrogen_H2Process_Vent,,Dummy,H2Process,na,H2,na,kWh,kWh,
+T_C_Dummy_Hydrocarbons_C12_C12Av,,Dummy,C12,na,C12Av,na,kWh,kWh,
+T_C_Net_Elec_El13_El47_2020,Not in Tech description,Eletricity Transport,El13,na,El47,El47,kWh,kWh,Transformer
+T_C_NetCoupled_Net_Elec_El47_El13_2020,Coupled electricity network between El47 and El13.,Eletricity Transport,El47,na,El13,El13,kWh,kWh,Grid
+T_C_Net_Elec_El47_ElBdg_2020,Electricity network connection between El47 and buildings.,Eletricity Transport,El47,na,ElBdg,ElBdg,kWh,kWh,Grid
+T_C_NetCoupled_Elec_ElBdg_El47_2020,Coupled electricity network between buildings and El47.,Eletricity Transport,ElBdg,na,El47,El47,kWh,kWh,Grid
+T_C_Net_Elec_El47_ElRest_2020,Electricity network connection between El47 and other electricity nodes.,Eletricity Transport,El47,na,ElRest,ElRest,kWh,kWh,Grid
+T_C_NetCoupled_Elec_ElRest_El47_2020,Coupled electricity network between other electricity nodes and El47.,Eletricity Transport,ElRest,na,El47,El47,kWh,kWh,Grid
+T_C_Conv_Elec_Nuclear_U235_El13_2050,Electricity generation from nuclear power (U235) at node El13.,Thermal Powerplant,U235,na,"El13, ThDh",El13,kWh,"kWh, kWh",Nuclear Powerplant
+T_C_Conv_Elec_Msw_Incinerator_2020,Electricity generation from municipal solid waste (MSW) incineration.,Thermal Powerplant,Msw,na,"El13, ThHt, CO2Waste",El13,kWh,"kWh, kWh, kWh",Incineration Plant
+T_C_Conv_Elec_Msw_Incinerator_2050,Electricity generation from municipal solid waste (MSW) incineration.,Thermal Powerplant,Msw,na,"El13, ThHt, CO2Waste",El13,kWh,"kWh, kWh, kWh",Incineration Plant
+T_C_Conv_Elec_H2_Ccgt_2050,Hydrogen-fueled combined cycle gas turbine (CCGT) electricity generation (2040).,Thermal Powerplant,"H2, O2",na,El47,El47,"kWh, kWh",kWh,CCGT
+T_C_Conv_Elec_H2_Ocgt_2050,Hydrogen-fueled open cycle gas turbine (OCGT) electricity generation (2040).,Thermal Powerplant,H2,na,El13,El13,kWh,kWh,OCGT
+T_C_Conv_Elec_Ch4_Chp_2050,Combined heat and power (CHP) generation using methane (CH₄).,Heat and Electricity generation,Ch4,na,"El47, ThHt",El47,kWh,"kWh, kWh",General process unit
+T_C_Conv_Elec_Ch4_Ocgt_2050,Methane-fueled open cycle gas turbine (OCGT) electricity generation (2030).,Gas Turbine,Ch4,na,El13,El13,kWh,kWh,OCGT
+T_C_Conv_Elec_Ch4_Ccgt_2050,Methane-fueled CCGT with carbon capture and storage (CCS) (2050).,Gas Turbine,Ch4,na,El13,El13,kWh,kWh,CCGT
+T_C_Conv_Elec_Ch4_CCGT + CCS Combo_2050,Methane-fueled CCGT with carbon capture and storage (CCS).,Gas Turbine,Ch4,na,"El13, CO2Sys",El13,kWh,"kWh, kWh",CCGT + CCS
+T_C_Conv_Elec_Wood_Chp_2020,Combined heat and power (CHP) generation using wood.,Heat and Electricity generation,Wood,na,"El47, ThHt, CO2Wood",El47,kWh,"kWh, kWh, kWh",General process unit
+T_C_Conv_Elec_Wood_Chp_2050,Combined heat and power (CHP) generation using wood.,Heat and Electricity generation,Wood,na,"El47, ThHt, CO2Wood",El47,kWh,"kWh, kWh, kWh",General process unit
+T_C_Conv_Elec_Geothermal_Chp_2020,Geothermal-based CHP generation (2040).,Heat and Electricity generation,ThGround,na,"El47, ThHt",El47,kWh,"kWh, kWh",Geothermal Powerplant
+T_C_Conv_Elec_Geothermal_Chp_2050,Geothermal-based CHP generation (2040).,Heat and Electricity generation,ThGround,na,"El47, ThHt",El47,kWh,"kWh, kWh",Geothermal Powerplant
+T_C_Conv_Elec_Fuelcell_El47_2040,Electricity generation via fuel cells at node El47 (2040).,Electricity production / Hydrogen use,H2,na,"El47, ThHt",El47,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Elec_Fuelcell_El47_2050,Electricity generation via fuel cells at node El47 (2050).,Electricity production / Hydrogen use,H2,na,"El47, ThHt",El47,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Elec_FuelcellCh4_El47_2030,Methane-fueled fuel cell electricity generation at El47 (2030).,Electricity production / Hydrogen use,Ch4,na,"El47, ThHt",El47,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Hydro_HydroRor_Plant_2020,Run-of-river hydroelectric power plant.,Hydro,HydroRor,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroRor_Plant_2050,Run-of-river hydroelectric power plant.,Hydro,HydroRor,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroS_Turbine_2020,Hydroelectric power generation from storage reservoirs.,Hydro,HydroS,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroS_Turbine_2050,Hydroelectric power generation from storage reservoirs.,Hydro,HydroS,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroSMustrun_Turbine_2020,Must-run hydroelectric power generation from storage reservoirs.,Water turbine,HydroSMustrun,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroSMustrun_Turbine_2050,Must-run hydroelectric power generation from storage reservoirs.,Water turbine,HydroSMustrun,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroPumped_Turbine_2020,Pumped hydroelectric power generation (turbine mode).,Water turbine,HydroPumped,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroPumped_Turbine_2050,Pumped hydroelectric power generation (turbine mode).,Water turbine,HydroPumped,na,El13,El13,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroPumped_Pump_2020,Pumped hydroelectric energy storage (pump mode).,Water turbine,El13,na,HydroPumped,HydroPumped,kWh,kWh,Hydro Plant
+T_C_Conv_Hydro_HydroPumped_Pump_2050,Pumped hydroelectric energy storage (pump mode).,Water turbine,El13,na,HydroPumped,HydroPumped,kWh,kWh,Hydro Plant
+T_C_Conv_Elec_Fuelcell_ElBdg_2030,Electricity generation via fuel cells in buildings (2030).,Electricity production / Hydrogen use,H2,na,"ElBdg, ThBdg",ElBdg,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Elec_Fuelcell_ElBdg_2050,Electricity generation via fuel cells in buildings (2050).,Electricity production / Hydrogen use,H2,na,"ElBdg, ThBdg",ElBdg,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Elec_FuelcellCh4_ElBdg_2030,Methane-fueled fuel cell electricity generation in buildings (2030).,Electricity production / Hydrogen use,Ch4,na,"ElBdg, ThBdg",ElBdg,kWh,"kWh, kWh",Fuelcell
+T_C_Conv_Thermal_ThermalBdg_Hp_2020,"Generic heat pump for residential heating, fixed COP 4",Heat generation,ElBdg,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_Hp_2050,"Generic heat pump for residential heating, fixed COP 4",Heat generation,ElBdg,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Coupled_Thermal_ThermalBdg_HpSc_2020,Coupled heat pump system for buildings.,Heat generation,ElBdg,na,ThSc,ThSc,kWh,kWh,Heatpump
+T_C_Coupled_Thermal_ThermalBdg_HpSc_2050,Coupled heat pump system for buildings.,Heat generation,ElBdg,na,ThSc,ThSc,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_ElBdg_ThSc_2020,Electric heating system for buildings with thermal storage.,Heat generation,ElBdg,na,ThSc,ThSc,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_ElBdg_ThSc_2050,Electric heating system for buildings with thermal storage.,Heat generation,ElBdg,na,ThSc,ThSc,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_El_2020,Electric heating system for buildings.,Heat generation,ElBdg,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_El_2050,Electric heating system for buildings.,Heat generation,ElBdg,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_Wood_2020,Wood-fueled heating system for buildings.,Heat generation,Wood,na,ThBdg,ThBdg,kWh,kWh,General process unit
+T_C_Conv_Thermal_ThermalBdg_Wood_2050,Wood-fueled heating system for buildings.,Heat generation,Wood,na,ThBdg,ThBdg,kWh,kWh,General process unit
+T_C_Conv_Thermal_ThermalBdg_Ch4_2020,Methane-fueled heating system for buildings.,Gas Boiler,Ch4,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_Ch4_2050,Methane-fueled heating system for buildings.,Gas Boiler,Ch4,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_C12_2020,Hydrocarbon-fueled heating system for buildings.,Heat generation,C12,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_ThermalBdg_C12_2050,Hydrocarbon-fueled heating system for buildings.,Heat generation,C12,na,ThBdg,ThBdg,kWh,kWh,Heatpump
+T_C_Conv_Thermal_MswPh_ThPh_Waste_2020,Waste-fueled thermal energy generation in power plants.,Heat generation,MswPh,na,ThPh,ThPh,kWh,kWh,Incineration Plant
+T_C_Conv_Thermal_MswPh_ThPh_Waste_2050,Waste-fueled thermal energy generation in power plants.,Heat generation,MswPh,na,ThPh,ThPh,kWh,kWh,Incineration Plant
+T_C_Conv_Thermal_ThAmb_ThHt_2030,Ambient heat extraction for heating (2030).,Heat generation,"ElRest, ThAmb",ElRest,ThHt,ThHt,"kWh, kWh",kWh,Heat Upgrade
+T_C_Conv_Thermal_ThAmb_ThHt_2040,Ambient heat extraction for heating (2040).,Heat generation,"ElRest, ThAmb",ElRest,ThHt,ThHt,"kWh, kWh",kWh,Heat Upgrade
+T_C_Conv_Thermal_ThLt_ThHt_2030,Low-temperature heat upgrade for district heating (2030).,,"ElRest, ThLt",ElRest,ThHt,ThHt,"kWh, kWh",kWh,Heat Upgrade
+T_C_Conv_Thermal_ThLt_ThHt_2040,Low-temperature heat upgrade for district heating (2040).,,"ElRest, ThLt",ElRest,ThHt,ThHt,"kWh, kWh",kWh,Heat Upgrade
+T_C_Conv_Thermal_ThermalPh_El_2020,Electric heating system for thermal power plants.,Heat generation,ElRest,na,ThPh,ThPh,kWh,kWh,Heat Pump
+T_C_Conv_Thermal_ThermalPh_El_2050,Electric heating system for thermal power plants.,Heat generation,ElRest,na,ThPh,ThPh,kWh,kWh,Heat Pump
+T_C_Conv_Thermal_ThermalPh_Wood_2020,Wood-fueled heating system for thermal power plants.,Heat generation,Wood,na,ThPh,ThPh,kWh,kWh,Biomass Furnace
+T_C_Conv_Thermal_ThermalPh_Wood_2050,Wood-fueled heating system for thermal power plants.,Heat generation,Wood,na,ThPh,ThPh,kWh,kWh,Biomass Furnace
+T_C_Conv_Thermal_ThermalPh_Ch4,Methane-fueled heating system for thermal power plants.,Heat generation,Ch4,na,ThPh,ThPh,kWh,kWh,Gasfired Boiler
+T_C_Conv_Thermal_ThermalPh_C12,Hydrocarbon-fueled heating system for thermal power plants.,Heat generation,C12,na,ThPh,ThPh,kWh,kWh,Oilfired Boiler
+T_C_Conv_Thermal_ThermalPh_H2_2030,Hydrogen-fueled heating system for thermal power plants (2030).,Heat generation,H2,na,ThPh,ThPh,kWh,kWh,Hydrogen Burner
+T_C_Net_Thermal_ThDh_ThBdg,Thermal network connection between district heating and buildings.,Heat transfer,ThDh,na,ThBdg,ThBdg,kWh,kWh,District Heating Network
+T_C_Net_Thermal_ThHt_ThDh,Thermal network connection between heat sources and district heating.,Heat transfer,ThHt,na,ThDh,ThDh,kWh,kWh,District Heating Network
+T_C_Conv_ThBdg_Vent,Ventilation heat loss in buildings.,,ThBdg,na,ThLt,ThLt,kWh,kWh,Ventilation
+T_C_Conv_ThLt_Vent,Ventilation heat loss at low-temperature heat nodes.,,ThLt,na,ThHt,ThHt,kWh,kWh,Ventilation
+T_C_Conv_ThHt_Vent,Ventilation heat loss at high-temperature heat nodes.,,ThHt,na,ThPh,ThPh,kWh,kWh,Ventilation
+T_C_Conv_ThPh_Vent,Ventilation heat loss at thermal power plants.,,ThPh,na,ThHt,ThHt,kWh,kWh,Ventilation
+T_C_Conv_Hydrogen_Electrolysis_El47_H2_2030,"Electrolysis 2030, Alkaline technology is the benchmark ",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,Electrolyzer
+T_C_Conv_Hydrogen_Electrolysis_El47_H2_2040,"Electrolysis 2040, Alkaline technology is the benchmark",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,Electrolyzer
+T_C_Conv_Hydrogen_Electrolysis_El47_H2_2050,"Electrolysis 2050, Solid oxide electrolysis is the benchmark",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,Electrolyzer
 T_C_Conv_Hydrogen_Electrolysis_AEC_10MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_10MW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_10MW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_10MW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+10MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_100MW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_100MW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_100MW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_1GW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_1GW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_1GW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_AEC_1GW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+1GW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,AEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_10MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_10MW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_10MW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_10MW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_1GW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_1GW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_1GW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_PEMEC_1GW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,PEMEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_1MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_1MW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_1MW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_1MW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_10MW_El47_H2_2020,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_10MW_El47_H2_2030,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_10MW_El47_H2_2040,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_10MW_El47_H2_2050,"Alkiline Elctrolysis Cells (AEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_100MW_El47_H2_2020,"Alkiline Elctrolysis Cells (SOEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_100MW_El47_H2_2030,"Alkiline Elctrolysis Cells (SOEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_100MW_El47_H2_2040,"Alkiline Elctrolysis Cells (SOEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
 T_C_Conv_Hydrogen_Electrolysis_SOEC_100MW_El47_H2_2050,"Alkiline Elctrolysis Cells (SOEC), Potassiumhydroxide.
-100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,na
-T_C_Conv_Hydrogen_Gasification_Wood_Syngas_2030,Woody biomass gasification to syngas,Syngas production,"Wood, H2O, ThHt",Wood,"H2Process, CO, CO2Sys",H2Process
-T_C_Conv_Hydrogen_Gasification_Msw_Syngas_2030,Municipal solid waste gasification to syngas,Syngas production,"Msw, H2O, ThHt",Msw,"H2Process, CO, CO2Sys",H2Process
-T_C_Conv_Hydrogen_Gasification_Wood_H2_2030,Woody biomass gasification to hydrogen,Hydrogen production,"Wood, H2O, ThHt",Wood,"H2, CO2Sys",H2
-T_C_Conv_Hydrogen_Gasification_Msw_H2_2030,Municipal solid waste gasification to hydrogen,Hydrogen production,"Msw, H2O, ThHt",Msw,"H2, CO2Sys",H2
-T_C_Conv_Methane_Digestion_BioWet_Ch4_2020,Wet biomass anaerobic digestion with gas separation,Digestion,BioWet,BioWet,"Ch4, CO2Sys",Ch4
-T_C_Conv_Methane_Digestion_BioWet_Ch4_2030,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,na
-T_C_Conv_Methane_Digestion_BioWet_Ch4_2040,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,na
-T_C_Conv_Methane_Digestion_BioWet_Ch4_2050,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,na
-T_C_Conv_CatalyticHydropyrolysis_syngas_2020,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_CatalyticHydropyrolysis_syngas_2030,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_CatalyticHydropyrolysis_syngas_2040,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_CatalyticHydropyrolysis_syngas_2050,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_digestate_2020,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_digestate_2030,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_digestate_2040,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_digestate_2050,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_straw_2020,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_straw_2030,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_straw_2040,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",na
-T_C_Conv_SlowPyrolisis_straw_2050,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",na
-T_C_Conv_FastPyrolisis_bioOil_2020,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,na
-T_C_Conv_FastPyrolisis_bioOil_2030,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,na
-T_C_Conv_FastPyrolisis_bioOil_2040,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,na
-T_C_Conv_FastPyrolisis_bioOil_2050,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,na
-T_C_Conv_Gasifier_Syngas_2020,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",na
-T_C_Conv_Gasifier_Syngas_2030,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",na
-T_C_Conv_Gasifier_Syngas_2040,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",na
-T_C_Conv_Gasifier_Syngas_2050,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",na
-T_C_Conv_Methane_Biogas_large_CH4_2020,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_large_CH4_2030,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_large_CH4_2040,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_large_CH4_2050,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_small_CH4_2020,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_small_CH4_2030,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_small_CH4_2040,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Methane_Biogas_small_CH4_2050,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,na
-T_C_Conv_Coelectrolysis_2020,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,na
-T_C_Conv_Coelectrolysis_2030,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,na
-T_C_Conv_Coelectrolysis_2040,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,na
-T_C_Conv_Coelectrolysis_2050,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,na
-T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2020,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2030,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2040,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2050,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2030,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2040,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4
-T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2050,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4
-T_C_Conv_Methanol_Syngas_MeOH_2030,Methanol synthesis from Syngas via the thermo catalytic CO hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_Methanol_Syngas_MeOH_2040,Methanol synthesis from Syngas via the thermo catalytic CO hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2020,Not in Tech description,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2030,Not in Tech description,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2040,Not in Tech description,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2050,Not in Tech description,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH
-T_C_Conv_CarbonDioxide_CO2Sys_Vent,Carbon dioxide venting from the CO₂ system.,,CO2Sys,na,CO2Sys,na
-T_C_Conv_CarbonCapture_Amine_2030,CO2 post combustion capture via Amine washing. Temperature swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,na
-T_C_Conv_CarbonCapture_Hpc_2030,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,na
-T_C_Conv_CarbonCapture_Amine_2040,CO2 post combustion capture via Amine washing. Temperature swing process. 2040 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,na
-T_C_Conv_CarbonCapture_Hpc_2040,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,na
-T_C_Conv_CarbonCapture_Amine_2050,CO2 post combustion capture via Amine washing. Temperature swing process. 2050 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,na
-T_C_Conv_CarbonCapture_Hpc_2050,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2050 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2, El13, ThHt",CO2Waste,CO2Sys,na
-T_C_Conv_CarbonCapture_CO2Waste_Vent,CO₂ venting from waste-related processes.,CO2 capture,CO2Waste,na,CO2Sys,na
-T_C_Conv_CarbonCapture_CO2Wood_Vent,CO₂ venting from wood-related processes.,CO2 capture,CO2Wood,na,CO2Sys,na
-T_C_Conv_CarbonCapture_DacAds_2030,Direct air capture using adsorption technology (2030).,CO2 capture,"ThHt, El47",El47,CO2Sys,na
-T_C_Conv_CarbonCapture_DacAds_2040,Direct air capture using adsorption technology (2040).,CO2 capture,"ThHt, El47",El47,CO2Sys,na
-T_C_Conv_CarbonCapture_DacAds_2050,Direct air capture using adsorption technology (2050).,CO2 capture,"ThHt, El47",El47,CO2Sys,na
-T_C_Net_CarbonDioxide_Pipeline,Not in Tech description,CO2 transport,CO2Sys,na,CO2Exp,na
-T_C_Conv_CarbonMonoxide_Rwgs_H2_CO_2030,"Reverse water gas shift reaction plant. Emerging technology, 2030. ",Reverse water gas shift,"H2, CO2Sys, ThPh",H2,"CO, H2O",na
-T_C_Conv_CarbonMonoxide_Rwgs_H2_CO_2040,"Reverse water gas shift reaction plant. Mature technology, 2040. ",Reverse water gas shift,"H2, CO2Sys, ThPh",H2,"CO, H2O",na
-T_C_CarbonMonoxide_ElecRR_CO2_CO,"Reverse water gas shift reaction plant. Mature technology, 2040. ",Electrochemical CO2 reduction,"CO2Sys, El47",El47,CO,na
-T_C_Conv_CarbonMonoxide_CO_Vent,Carbon monoxide venting.,,CO,na,CO2Sys,na
-T_C_Conv_Pyrolysis_Wood_CBio,Biochar production via pyrolysis of wood.,Carbon black production,Wood,na,"CBio, ThHt",CBio
-T_C_Conv_Pyrolysis_BioWet_CBio,Biochar production via pyrolysis of wet biomass.,Carbon black production,BioWet,na,Cbio,CBio
-T_C_Conv_Pyrolysis_Ch4_CCh4_2030,Not in Tech description,,NaturalGas,na,"Cbio, H2",CBio
-T_C_Conv_Hydrocarbons_FischerTropsch_C8_2020,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8
-T_C_Conv_Hydrocarbons_FischerTropsch_C8_2030,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8
-T_C_Conv_Hydrocarbons_FischerTropsch_C8_2040,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8
-T_C_Conv_Hydrocarbons_FischerTropsch_C8_2050,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8
-T_C_Conv_Hydrocarbons_FischerTropsch_C12,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12
-T_C_Conv_Wind_Turbine_Generic_2020,Generic wind turbine electricity generation (2020).,Wind turbine,ElWind,na,El13,na
-T_C_Conv_Wind_Turbine_Generic_2030,Generic wind turbine electricity generation (2030).,Wind turbine,ElWind,na,El13,na
-T_C_Conv_Wind_Turbine_Generic_2040,Generic wind turbine electricity generation (2040).,Wind turbine,ElWind,na,El13,na
-T_C_Conv_Wind_Turbine_Generic_2050,Generic wind turbine electricity generation (2050).,Wind turbine,ElWind,na,El13,na
-T_C_Conv_Ammonia_HaberBosch,Ammonia synthesis (Haber Bosch process),Haberbosch,"H2, N2",na,"NH3, Th",NH3
-T_C_Conv_Ammonia_OCGT,,,"NH3, O2",na,"N2, H20, ThHt",N2
-T_C_Conv_Ammonia_CCGT,,,"NH3, O2",na,"N2, H20, ThHt",N2
+100MW plant as basis",Hydrogen production / Electricity use,El47,na,H2,H2,kWh,kWh,SOEC
+T_C_Conv_Hydrogen_Gasification_Wood_Syngas_2030,Woody biomass gasification to syngas,Syngas production,"Wood, H2O, ThHt",Wood,"H2Process, CO, CO2Sys",H2Process,"kWh, kWh","kWh, kWh, kWh",Fluidized Bed Gasifier
+T_C_Conv_Hydrogen_Gasification_Msw_Syngas_2030,Municipal solid waste gasification to syngas,Syngas production,"Msw, H2O, ThHt",Msw,"H2Process, CO, CO2Sys",H2Process,"kWh, kWh","kWh, kWh, kWh",Fluidized Bed Gasifier
+T_C_Conv_Hydrogen_Gasification_Wood_H2_2030,Woody biomass gasification to hydrogen,Hydrogen production,"Wood, H2O, ThHt",Wood,"H2, CO2Sys",H2,"kWh, kWh","kWh, kWh",Fluidized Bed Gasifier
+T_C_Conv_Hydrogen_Gasification_Msw_H2_2030,Municipal solid waste gasification to hydrogen,Hydrogen production,"Msw, H2O, ThHt",Msw,"H2, CO2Sys",H2,"kWh, kWh","kWh, kWh",Fluidized Bed Gasifier
+T_C_Conv_Methane_Digestion_BioWet_Ch4_2020,Wet biomass anaerobic digestion with gas separation,Digestion,BioWet,BioWet,"Ch4, CO2Sys",Ch4,kWh,"kWh, kWh",Anaerobic Digester
+T_C_Conv_Methane_Digestion_BioWet_Ch4_2030,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,Ch4,"kWh, kWh",kWh,Anaerobic Digester
+T_C_Conv_Methane_Digestion_BioWet_Ch4_2040,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,Ch4,"kWh, kWh",kWh,Anaerobic Digester
+T_C_Conv_Methane_Digestion_BioWet_Ch4_2050,Wet biomass anaerobic digestion with gas upgrading,Digestion,"BioWet, H2",BioWet,Ch4,Ch4,"kWh, kWh",kWh,Anaerobic Digester
+T_C_Conv_CatalyticHydropyrolysis_syngas_2020,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Hydropyrolysis Reactor
+T_C_Conv_CatalyticHydropyrolysis_syngas_2030,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Hydropyrolysis Reactor
+T_C_Conv_CatalyticHydropyrolysis_syngas_2040,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Hydropyrolysis Reactor
+T_C_Conv_CatalyticHydropyrolysis_syngas_2050,Thermochemical Conversion of biomass into bio-oil or liquid fuels,Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Hydropyrolysis Reactor
+T_C_Conv_SlowPyrolisis_digestate_2020,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_digestate_2030,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_digestate_2040,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_digestate_2050,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioDry,BioDry,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_straw_2020,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_straw_2030,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_straw_2040,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_SlowPyrolisis_straw_2050,"High temperature pyrolisis of straw. Turning into biochar, bio-oil and gas",Pyrolisis,BioWet,BioWet,"biochar, oil, syngas",biochar,kg,"kWh, kWh, kWh",Pyrolyser
+T_C_Conv_FastPyrolisis_bioOil_2020,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,bio-oil,kg,kWh,Pyrolyser
+T_C_Conv_FastPyrolisis_bioOil_2030,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,bio-oil,kg,kWh,Pyrolyser
+T_C_Conv_FastPyrolisis_bioOil_2040,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,bio-oil,kg,kWh,Pyrolyser
+T_C_Conv_FastPyrolisis_bioOil_2050,High temperature pyrolisis of biomass. Turning into bio-oil,Pyrolisis,BioWet,BioWet,bio-oil,bio-oil,kg,kWh,Pyrolyser
+T_C_Conv_Gasifier_Syngas_2020,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",H2,kg,"kWh, kWh, kg",Gasifier
+T_C_Conv_Gasifier_Syngas_2030,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",H2,kg,"kWh, kWh, kg",Gasifier
+T_C_Conv_Gasifier_Syngas_2040,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",H2,kg,"kWh, kWh, kg",Gasifier
+T_C_Conv_Gasifier_Syngas_2050,"Conversion of biomass without combustion, using a controlled amount of oxygen and/or steam, into sythetitc gas",Syngas production,"BioWet, H2O, ThHt",BioWet,"CO, H2, H2O",H2,kg,"kWh, kWh, kg",Gasifier
+T_C_Conv_Methane_Biogas_large_CH4_2020,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_large_CH4_2030,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_large_CH4_2040,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_large_CH4_2050,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_small_CH4_2020,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_small_CH4_2030,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_small_CH4_2040,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Methane_Biogas_small_CH4_2050,Wet biomass anaerobic digestion with gas upgrading. 10000 tons biomass per year,Methane synthesis,BioWet,BioWet,CH4,CH4,kg,kWh,Anaerobic Digester
+T_C_Conv_Coelectrolysis_2020,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,H2,"kg, kg, kWh",kWh,Electrolyzer
+T_C_Conv_Coelectrolysis_2030,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,H2,"kg, kg, kWh",kWh,Electrolyzer
+T_C_Conv_Coelectrolysis_2040,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,H2,"kg, kg, kWh",kWh,Electrolyzer
+T_C_Conv_Coelectrolysis_2050,High temperature co-electrolysis of CO2 and H2O,Electrolysis,"H2O, CO2, El47",H2O,H2,H2,"kg, kg, kWh",kWh,Electrolyzer
+T_C_Conv_FormicAcid_Hydrogenation,,Methane synthesis,"H2,HCOOH, Th",H2,"CH3OH, H2O",CH3OH,kWh,"kWh, kg",Hydrogenator
+T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2020,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4,"kWh, kg","kWh, kWh, kg",Thermo-catalytic methanation reactor
+T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2030,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4,"kWh, kg","kWh, kWh, kg",Thermo-catalytic methanation reactor
+T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2040,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4,"kWh, kg","kWh, kWh, kg",Thermo-catalytic methanation reactor
+T_C_Conv_Methane_Hydrogenation_CO2_Ch4_2050,Methane synthesis from H2 and CO2 via the thermo catalytic Sabatier reaction.,Methane synthesis,"H2, COSys",H2,"Ch4, ThPhII, H2O",Ch4,"kWh, kg","kWh, kWh, kg",Thermo-catalytic methanation reactor
+T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2020,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4,"kWh, kWh","kWh, kWh, kg",Sabatier Reaction
+T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2030,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4,"kWh, kWh","kWh, kWh, kg",Sabatier Reaction
+T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2040,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4,"kWh, kWh","kWh, kWh, kg",Sabatier Reaction
+T_C_Conv_Methane_Hydrogenation_Syngas_Ch4_2050,Methane synthesis from Syngas via the thermo catalytic CO hydrogenation. ,Methane synthesis,"H2Process, CO","H2, CO","Ch4, ThHt, H2O",Ch4,"kWh, kWh","kWh, kWh, kg",Sabatier Reaction
+T_C_Conv_Methanol_Syngas_MeOH_2030,Methanol synthesis from Syngas via the thermo catalytic CO hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Gas Separator
+T_C_Conv_Methanol_Syngas_MeOH_2040,Methanol synthesis from Syngas via the thermo catalytic CO hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Gas Separator
+T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2020,Methanol synthesis from CO2 hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Thermo-catalytic methanol synthesis reactor
+T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2030,Methanol synthesis from CO2 hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Thermo-catalytic methanol synthesis reactor
+T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2040,Methanol synthesis from CO2 hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Thermo-catalytic methanol synthesis reactor
+T_C_Conv_Methanol_Hydrogenation_H2_MeOH_2050,Methanol synthesis from CO2 hydrogenation,Methanol production,"H2, CO",H2,"MeOH, ThHt",MeOH,"kWh, kWh","kWh, kWh",Thermo-catalytic methanol synthesis reactor
+T_C_Conv_CarbonDioxide_CO2Sys_Vent,Carbon dioxide venting from the CO₂ system.,,CO2Sys,na,CO2Sys,CO2Sys,kg,kg,General process unit
+T_C_Conv_CarbonCapture_Amine_2030,CO2 post combustion capture via Amine washing. Temperature swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Amine Absorber
+T_C_Conv_CarbonCapture_Hpc_2030,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Carbonate Cycling
+T_C_Conv_CarbonCapture_Amine_2040,CO2 post combustion capture via Amine washing. Temperature swing process. 2040 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Amine Absorber
+T_C_Conv_CarbonCapture_Hpc_2040,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2030 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Carbonate Cycling
+T_C_Conv_CarbonCapture_Amine_2050,CO2 post combustion capture via Amine washing. Temperature swing process. 2050 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2Fluegas, El13, ThHt",CO2Fluegas,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Amine Absorber
+T_C_Conv_CarbonCapture_Hpc_2050,CO2 post combustion capture via Hot-Potassium Carbonate cycling. Pressure swing process. 2050 reference based on an approx. 150 ktCO2/a plant size. ,CO2 capture,"CO2, El13, ThHt",CO2Waste,CO2Sys,CO2Sys,"kg, kWh, kWh",kg,Carbonate Cycling
+T_C_Conv_CarbonCapture_CO2Waste_Vent_2050,CO₂ venting from waste-related processes.,CO2 capture,CO2Waste,na,CO2Sys,CO2Sys,kg,kg,General process unit
+T_C_Conv_CarbonCapture_CO2Wood_Vent_2050,CO₂ venting from wood-related processes.,CO2 capture,CO2Wood,na,CO2Sys,CO2Sys,kg,kg,General process unit
+T_C_Conv_CarbonCapture_DacAds_2030,Direct air capture using adsorption technology (2030).,CO2 capture,"ThHt, El47",El47,CO2Sys,CO2Sys,"kWh, kWh",kg,DAC
+T_C_Conv_CarbonCapture_DacAds_2040,Direct air capture using adsorption technology (2040).,CO2 capture,"ThHt, El47",El47,CO2Sys,CO2Sys,"kWh, kWh",kg,DAC
+T_C_Conv_CarbonCapture_DacAds_2050,Direct air capture using adsorption technology (2050).,CO2 capture,"ThHt, El47",El47,CO2Sys,CO2Sys,"kWh, kWh",kg,DAC
+T_C_Net_CarbonDioxide_Pipeline_2050,Carbon Dioxide Pipeline,CO2 transport,CO2Sys,na,CO2Exp,CO2Exp,kg,kg,Pipeline
+T_C_Conv_CarbonMonoxide_Rwgs_H2_CO_2030,"Reverse water gas shift reaction plant. Emerging technology, 2030. ",Reverse water gas shift,"H2, CO2Sys, ThPh",H2,"CO, H2O",CO,"kWh, kg, kWh","kWh, kg",RWGS
+T_C_Conv_CarbonMonoxide_Rwgs_H2_CO_2040,"Reverse water gas shift reaction plant. Mature technology, 2040. ",Reverse water gas shift,"H2, CO2Sys, ThPh",H2,"CO, H2O",CO,"kWh, kg, kWh","kWh, kg",Thermo-catalytic RWGS reactor
+T_C_CarbonMonoxide_ElecRR_CO2_CO,"Reverse water gas shift reaction plant. Mature technology, 2040. ",Electrochemical CO2 reduction,"CO2Sys, El47",El47,CO,CO,"kg, kWh",kWh,Thermo-catalytic RWGS reactor
+T_C_Conv_CarbonMonoxide_CO_Vent,Carbon monoxide venting.,,CO,na,CO2Sys,CO2Sys,kWh,kg,Venitlator
+T_C_Conv_Pyrolysis_Wood_CBio,Biochar production via pyrolysis of wood.,Carbon black production,Wood,na,"CBio, ThHt",CBio,kWh,"kWh, kWh",Pyrolyser
+T_C_Conv_Pyrolysis_BioWet_CBio,Biochar production via pyrolysis of wet biomass.,Carbon black production,BioWet,na,Cbio,CBio,kWh,kWh,Pyrolyser
+T_C_Conv_Pyrolysis_Ch4_CCh4_2030,Not in Tech description,,NaturalGas,na,"Cbio, H2",CBio,kWh,"kWh, kWh",Pyrolyser
+T_C_Conv_Hydrocarbons_FischerTropsch_C8_2020,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C8_2030,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C8_2040,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C8_2050,Hydrocarbon (C8) synthesis via Fischer-Tropsch process.,Thermochemical CO Hydrogenation,"H2Process, CO",H2Process,"C8, ThHt, H2O",C8,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C12_2020,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C12_2030,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C12_2040,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_C12_2050,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Hydrocarbons_FischerTropsch_VSA_2020,Hydrocarbon (C12) synthesis via Fischer-Tropsch process.,Fischer Tropsch,"H2Process, CO",H2Process,"C12, ThHt",C12,"kWh, kWh","kWh, kWh",Fischer Tropsch
+T_C_Conv_Wind_Turbine_Generic_2020,Generic wind turbine electricity generation (2020).,Wind turbine,ElWind,na,El13,El13,kWh,kWh,Wind Turbine
+T_C_Conv_Wind_Turbine_Generic_2030,Generic wind turbine electricity generation (2030).,Wind turbine,ElWind,na,El13,El13,kWh,kWh,Wind Turbine
+T_C_Conv_Wind_Turbine_Generic_2040,Generic wind turbine electricity generation (2040).,Wind turbine,ElWind,na,El13,El13,kWh,kWh,Wind Turbine
+T_C_Conv_Wind_Turbine_Generic_2050,Generic wind turbine electricity generation (2050).,Wind turbine,ElWind,na,El13,El13,kWh,kWh,Wind Turbine
+T_C_Conv_Ammonia_HaberBosch_2050,Ammonia synthesis (Haber Bosch process),Haberbosch,"H2, N2",H2,"NH3, Th",NH3,kWh,kWh,Haber Bosch
+T_C_Conv_Ammonia_OCGT_2050,,,"NH3, O2",NH3,"N2, H20, ThHt",N2,kWh,kWh,OCGT
+T_C_Conv_Ammonia_CCGT_2050,,,"NH3, O2",NH3,"N2, H20, ThHt",N2,kWh,kWh,CCGT
+T_C_Conv_Ammonia_CCGT_2050,,,"NH3, O2",NH3,"N2, H20, ThHt",N2,kWh,kWh,CCGT

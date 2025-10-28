@@ -30,8 +30,14 @@ def create_tech_rep_diagram_graphviz(df_tech_data):
 
         # Add carrier nodes and edges
         for col, direction in [('Input Carriers', 'in'), ('Output Carriers', 'out')]:
+            print(col.replace("Carrier","Units "), direction)
             li_inout = [x.strip() for x in df_tech_data.at[indx, col].split(',')]
-            for carr in li_inout:
+            units = [x.strip() for x in df_tech_data.at[indx, col.replace("Carriers", "Units - Shares")].split(',')]
+            print(units)
+            print("list_in_out",li_inout)
+            for carr, unit in zip(li_inout,units):
+                  # Append unit to carrier name
+                carr = carr+f"\n {unit}"
                 if carr not in carrier_nodes:
                     dot.node(carr, shape='box', style='filled', fillcolor='lightgreen')
                     carrier_nodes.add(carr)
@@ -51,7 +57,7 @@ df_tech_data_all = pd.read_csv("data/tech_representation.csv")
 # Download data from Google Sheet
 #sheet_url = "https://docs.google.com/spreadsheets/d/1_ZOiXZGA3DzyhO4cEZe0XlztVPwsVj1FnDgYM0hcsUk/"
 
-df_tech_data_all = pd.read_excel("data/tech_conv_with_units.xlsx", engine='openpyxl')
+df_tech_data_all = pd.read_excel("data/tech_conv.xlsx", engine='openpyxl')
 
 # fill NaN values with the previous value in the column
 df_tech_data_all.fillna(method='ffill', inplace=True)
